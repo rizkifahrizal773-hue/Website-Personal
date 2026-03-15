@@ -191,34 +191,25 @@ header{
 /* =====================================================
    ABOUT SECTION
 ===================================================== */
-@media (max-width:768px){
-
-    .about-container{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        text-align:left;
-    }
-
-    .about-img img{
-        width:100%;
-        max-width:300px;
-        height:auto;
-    }
-
-    .about-text{
-        width:100%;
-        padding:10px 20px;
-    }
-
-    .about-text p{
-        text-align:left;
-        line-height:1.6;
-    }
-
+.about-container{
+    display:flex;
+    align-items:center;
+    gap:40px;
 }
 
+.about-img img{
+    width:100%;
+    max-width:350px;
+    border-radius:10px;
+}
 
+.about-text{
+    flex:1;
+}
+
+.about-text p{
+    text-align:justify;
+}
 /* =====================================================
    MENU SECTION
 ===================================================== */
@@ -395,13 +386,12 @@ footer{
     }
    
     .about-container{
-        flex-direction:column;
-        text-align:center;
+    flex-direction:column;
+    align-items:center;
     }
 
     .about-text{
-        max-width:100%;
-        padding:10px 20px;
+    text-align:left;
     }
 }
 
