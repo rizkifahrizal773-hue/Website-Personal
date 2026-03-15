@@ -21,8 +21,14 @@
     <!-- NAVBAR -->
     <header>
         <nav class="navbar">
+    
             <a href="#" class="logo">NASI UDUK <span>MPOK HOMSAH</span></a>
-
+    
+            <!-- tombol hamburger -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+    
             <ul class="nav-links">
                 <li><a href="#home"><b>Beranda</b></a></li>
                 <li><a href="#about"><b>Tentang Kami</b></a></li>
@@ -30,9 +36,9 @@
                 <li><a href="#contact"><b>Lokasi</b></a></li>
                 <li><a href="#" class="btn-order"><b>Pesan Sekarang</b></a></li>
             </ul>
+    
         </nav>
     </header>
-
 
     <!-- HERO SECTION -->
     <section class="hero" id="home">
@@ -258,6 +264,16 @@
             }
         });
     });
+</script>
+<script>
+
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.nav-links');
+    
+    toggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+    
 </script>
 </body>
 </html>
