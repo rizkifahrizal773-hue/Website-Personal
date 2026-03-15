@@ -191,6 +191,7 @@ header{
 /* =====================================================
    ABOUT SECTION
 ===================================================== */
+
 .about-container{
     display:flex;
     align-items:center;
@@ -210,6 +211,7 @@ header{
 .about-text p{
     text-align:justify;
 }
+
 /* =====================================================
    MENU SECTION
 ===================================================== */
@@ -352,6 +354,7 @@ footer{
 /* =====================================================
    RESPONSIVE
 ===================================================== */
+
 .menu-toggle{
     display:none;
     font-size:24px;
@@ -384,15 +387,16 @@ footer{
     .nav-links.active{
         display:flex;
     }
-   
+
     .about-container{
-    flex-direction:column;
-    align-items:center;
+        flex-direction:column;
+        align-items:center;
     }
 
     .about-text{
-    text-align:left;
+        text-align:left;
     }
+
 }
 
 @media (max-width: 768px) {
