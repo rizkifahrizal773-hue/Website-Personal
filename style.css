@@ -201,7 +201,6 @@ header{
 .about-text{
     display:flex;
     flex-direction:column;
-    justify-content:center;
 }
 
 .about-img img{
