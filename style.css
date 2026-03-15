@@ -358,22 +358,39 @@ footer{
 /* =====================================================
    RESPONSIVE
 ===================================================== */
+.menu-toggle{
+    display:none;
+    font-size:24px;
+    cursor:pointer;
+}
+
+/* tampilan HP */
 @media (max-width:768px){
 
-.hero-content h1{
-    font-size:2.5rem;
-}
+    .menu-toggle{
+        display:block;
+    }
 
-.about-container{
-    grid-template-columns:1fr;
-}
+    .nav-links{
+        position:absolute;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#8BC34A;
+        flex-direction:column;
+        align-items:center;
+        display:none;
+        padding:20px 0;
+    }
 
-.nav-links{
-    display:none;
-}
+    .nav-links li{
+        margin:15px 0;
+    }
 
-.section{
-    padding:4rem 6%;
+    .nav-links.active{
+        display:flex;
+    }
+
 }
 
 /* Tambahkan di akhir style.css */
@@ -394,6 +411,4 @@ footer{
 @media (max-width: 480px) {
     .section { padding: 2rem 1rem; }
     .hero-content { padding: 0 1rem; }
-}
-
 }
